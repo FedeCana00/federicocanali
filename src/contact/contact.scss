@@ -1,0 +1,130 @@
+@import "../global.scss";
+
+.contact-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .left{
+        flex: 0.5;
+
+        img{
+            max-width: 100%;
+        }
+    }
+
+    .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex: 0.5;
+        max-width: 100%;
+        position: relative;
+
+        h1{
+            font-size: 55px;
+            color: $mainColor;
+            letter-spacing: 3px;
+            margin-inline: 40px;
+        }
+
+        p{
+            font-size: 18px;
+            line-height: 30px;
+            margin-inline: 40px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-inline: 40px;
+            width: calc(80% - 40px);
+
+            label{
+                font-size: 22px;
+                font-weight: bold;
+                margin-top: 15px;
+            }
+
+            input{
+                // 100% minus 10 padding x 2 + 1 border width x 2
+                width: calc(100% - 12px);
+                font-size: 20px;
+                border-width: 1px;
+                padding: 10px;
+                font-size: 18px;
+                border-color: gray;
+
+                &:focus{
+                    border-color: $mainColor
+                }
+            }
+
+            input[type=submit]{
+                width: auto;
+                align-self: flex-end;
+                padding: 20px;
+                color: white;
+                background-color: $mainColor;
+                border: 2px solid $mainColor;
+                font-size: 18px;
+                letter-spacing: 4px;
+                margin-top: 15px;
+                cursor: pointer;
+                transition: all 0.5s ease;
+
+                &:hover{
+                    color: $mainColor;
+                    background-color: white;
+                }
+            }
+
+            textarea{
+                // 100% minus 10 padding x 2 + 1 border width x 2
+                width: calc(100% - 22px);
+                margin: 0px;
+                height: 80px;
+                font-size: 18px;
+                border-width: 1px;
+                padding: 10px;
+                border-color: gray;
+                resize: none;
+
+                &:focus{
+                    border-color: $mainColor;
+                }
+            }
+        }
+
+        .successMsg{
+            margin-inline: 40px;
+            margin-top: 15px;
+            width: calc(80% - 60px);
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 20px;
+            background-color: green;
+            text-align: center;
+            animation: successMsg 5s;
+
+            @keyframes successMsg {
+                0%{
+                    opacity: 0;
+                }
+
+                25% {
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
