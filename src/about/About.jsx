@@ -40,13 +40,11 @@ export default function About(){
                     play a part in it. My first approach to this 
                     world was at the age of 17 with developing an 
                     arcade video game in Python. <br /> <br />
-                    Negli anni a seguire ho avuto la possibilità 
-                    di immergermici completamente tramite il mio 
-                    percorso universitario e le aziende con cui 
-                    ho interagito. <br /> <br />
-                    Attualmente posso dire di avere una buona 
-                    conoscenza di svariate tecnologie e di essere 
-                    un Android Developer!
+                    In the following years I had the opportunity 
+                    to fully immerse myself in it through my university 
+                    career and the companies I interacted with.<br /> <br />
+                    Currently I can say that I have a good knowledge of 
+                    various technologies and that I am an Android Developer!
                 </p>
             </div>
         </div>
