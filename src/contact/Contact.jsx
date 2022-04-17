@@ -53,7 +53,7 @@ export default function Contact() {
                     Contact me
                 </h1>
                 <p>
-                    Do you want to hire me for some work? Do you want to have more 
+                    Do you want to <b>HIRE ME</b> for some work? Do you want to have more 
                     information about my person? <br />
                     Or do you just want to have a chat? <br />
                     Write to me without obligation and fear!
