@@ -1,4 +1,7 @@
 import "./home.scss";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { color } from "@mui/system";
 
 export default function Home() {
 
@@ -18,6 +21,14 @@ export default function Home() {
                 </h3>
                 <div className="balls-container">
                     { [...Array(574)].map((_, index) => <div key={index} className="ball"/>) }
+                </div>
+                <div className="social-container">
+                    <a href="https://github.com/FedeCana00">
+                        <GitHubIcon sx={{ fontSize: 80, color: "#c1332a"}}/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/federico-canali-26b004211">
+                        <LinkedInIcon sx={{ fontSize: 80, color: "#c1332a"}}/>
+                    </a>
                 </div>
             </div>
             <div className="image-container">

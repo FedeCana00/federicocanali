@@ -50,6 +50,18 @@
                 background-color: $mainColor;
             }
         }
+
+        .social-container{
+            display: flex;
+
+            a{
+
+                &:hover{
+                    opacity: 0.7;
+                    cursor: pointer;
+                }
+            }
+        }
     }
 
     .image-container{
