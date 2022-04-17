@@ -1,7 +1,7 @@
 import "./home.scss";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import { color } from "@mui/system";
+import MouseScroll from "./mouse-scroll/MouseScroll";
 
 export default function Home() {
 
@@ -30,6 +30,7 @@ export default function Home() {
                         <LinkedInIcon sx={{ fontSize: 80, color: "#c1332a"}}/>
                     </a>
                 </div>
+                <MouseScroll />
             </div>
             <div className="image-container">
                 <div className="code">
