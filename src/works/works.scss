@@ -31,52 +31,87 @@
                 margin: 40px;
                 justify-content: flex-start;
                 align-items: center;
+
+                .software-type{
+                    color: $mainColor;
+                    font-size: 25px;
+                    letter-spacing: 4px;
+                    font-weight: 900;
+                }
+    
+                .title{
+                    font-size: 45px;
+                    font-weight: 700;
+                    color: black;
+                    max-width: 700px;
+                }
+    
+                p{
+                    max-width: 700px;
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+
+                .buttons-section{
+                    display: flex;
+                    
+                    a{
+
+                        button{
+                            padding: 20px;
+                            color: white;
+                            background-color: $mainColor;
+                            border: 2px solid $mainColor;
+                            font-size: 18px;
+                            letter-spacing: 4px;
+                            cursor: pointer;
+                            transition: all 0.5s ease;
+
+                            &:hover{
+                                color: $mainColor;
+                                background-color: white;
+                            }
+
+                            &.outline{
+                                color: $mainColor;
+                                background-color: white;
+                                margin-right: 20px;
+
+                                &:hover{
+                                    color: white;
+                                    background-color: $mainColor;
+                                    border: 2px solid $mainColor;
+                                }
+                            }
+                        }
+                    }
+                }
             }
 
             .right{
                 flex: 0.3;
                 position: relative;
-            }
 
-            .image-container{
-                margin: 40px;
-                width: 1000px;
-                overflow: hidden;
-                border-radius: 10px;
-                box-shadow: 0  9px 46px  8px rgba(0, 0, 0, 0.14),
-                    0 11px 15px -7px rgba(0, 0, 0, 0.12),
-                    0 24px 38px  3px rgba(0, 0, 0, 0.20);
-
-                img{
-                    transition: transform 2.5s ease;
-                    max-width:100%;
-                    max-height:100%;
-                    margin: 0px;
-
-                    &:hover{
-                        transform: scale(1.5);
+                .image-container{
+                    margin: 40px;
+                    width: 1000px;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    box-shadow: 0  9px 46px  8px rgba(0, 0, 0, 0.14),
+                        0 11px 15px -7px rgba(0, 0, 0, 0.12),
+                        0 24px 38px  3px rgba(0, 0, 0, 0.20);
+    
+                    img{
+                        transition: transform 2.5s ease;
+                        max-width:100%;
+                        max-height:100%;
+                        margin: 0px;
+    
+                        &:hover{
+                            transform: scale(1.5);
+                        }
                     }
                 }
-            }
-
-            .software-type{
-                color: $mainColor;
-                font-size: 25px;
-                letter-spacing: 4px;
-                font-weight: 900;
-            }
-
-            .title{
-                font-size: 45px;
-                font-weight: 700;
-                color: black;
-                max-width: 700px;
-            }
-
-            p{
-                max-width: 700px;
-                font-size: 20px;
-                line-height: 30px;
             }
         }
     }
