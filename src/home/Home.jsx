@@ -16,9 +16,10 @@ export default function Home() {
                     Hi, I'm <font>F</font>ederico <font>C</font>anali<font>.</font>
                 </h1>
 
-                <h3>
+                <p>
                     I conceive and develop ideas to improve efficiency in people's lives.
-                </h3>
+                </p>
+                <a href="#contact-me"><button>Hire me</button></a>
                 <div className="balls-container">
                     { [...Array(574)].map((_, index) => <div key={index} className="ball"/>) }
                 </div>

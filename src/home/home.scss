@@ -33,6 +33,28 @@
             }
         }
 
+        p{
+            font-size: 22px;
+            line-height: 30px;
+        }
+
+        button{
+            padding: 20px;
+            color: white;
+            background-color: $mainColor;
+            border: 2px solid $mainColor;
+            font-size: 18px;
+            letter-spacing: 4px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+
+            &:hover{
+                color: $mainColor;
+                background-color: white;
+            }
+
+        }
+
         .balls-container{
             position: relative;
             bottom: 350px;
