@@ -12,6 +12,10 @@
         color: black;
         max-width: 700px;
         margin-inline: 50px;
+
+        @include laptop{
+            font-size: 45px;
+        }
     }
 
     .projects{
@@ -33,11 +37,19 @@
                 justify-content: flex-start;
                 align-items: center;
 
+                @include laptop{
+                    margin: 30px;
+                }
+
                 .software-type{
                     color: $mainColor;
                     font-size: 25px;
                     letter-spacing: 4px;
                     font-weight: 900;
+
+                    @include laptop{
+                        font-size: 22px;
+                    }
                 }
     
                 .title{
@@ -45,12 +57,20 @@
                     font-weight: 700;
                     color: black;
                     max-width: 700px;
+
+                    @include laptop{
+                        font-size: 35px;
+                    }
                 }
     
                 p{
                     max-width: 700px;
                     font-size: 20px;
                     line-height: 30px;
+
+                    @include laptop{
+                        font-size: 18px;
+                    }
                 }
 
                 .buttons-section{
@@ -67,6 +87,10 @@
                             letter-spacing: 4px;
                             cursor: pointer;
                             transition: all 0.5s ease;
+
+                            @include laptop{
+                                padding: 15px;
+                            }
 
                             &:hover{
                                 color: $mainColor;
@@ -102,6 +126,11 @@
                     box-shadow: 0  9px 46px  8px rgba(0, 0, 0, 0.14),
                         0 11px 15px -7px rgba(0, 0, 0, 0.12),
                         0 24px 38px  3px rgba(0, 0, 0, 0.20);
+
+                    @include laptop{
+                        width: 700px;
+                        height: 393.75px;
+                    }
     
                     img{
                         transition: transform 2.5s ease;

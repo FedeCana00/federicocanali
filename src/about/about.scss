@@ -16,9 +16,18 @@
             flex-wrap: wrap;
             margin: 80px;
 
+            @include laptop{
+                margin: 60px;
+            }
+
             img{
                 height: 100px;
                 margin: 20px;
+
+                @include laptop{
+                    height: 70px;
+                    margin: 10px
+                }
             }
         }
     }
@@ -34,18 +43,32 @@
             font-size: 25px;
             letter-spacing: 4px;
             font-weight: 900;
+
+            @include laptop{
+                font-size: 22px;
+            }
         }
 
         h1{
             font-size: 55px;
             color: black;
             max-width: 700px;
+
+            @include laptop{
+                font-size: 45px;
+                max-width: 650px;
+            }
         }
 
         p{
             max-width: 700px;
             font-size: 20px;
             line-height: 30px;
+
+            @include laptop{
+                font-size: 18px;
+                max-width: 650px;
+            }
         }
     }
 }

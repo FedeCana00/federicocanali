@@ -28,6 +28,10 @@
             color: $mainColor;
             letter-spacing: 3px;
             margin-inline: 40px;
+
+            @include laptop{
+                font-size: 45px;
+            }
         }
 
         p{
@@ -48,6 +52,11 @@
                 font-size: 22px;
                 font-weight: bold;
                 margin-top: 15px;
+
+                @include laptop{
+                    font-size: 20px;
+                    margin-top: 12px;
+                }
             }
 
             input{
@@ -77,6 +86,11 @@
                 cursor: pointer;
                 transition: all 0.5s ease;
 
+                @include laptop{
+                    padding: 10px;
+                    margin-top: 12px;
+                }
+
                 &:hover{
                     color: $mainColor;
                     background-color: white;
@@ -93,6 +107,10 @@
                 padding: 10px;
                 border-color: gray;
                 resize: none;
+
+                @include laptop{
+                    height: 60px;
+                }
 
                 &:focus{
                     border-color: $mainColor;
@@ -111,6 +129,12 @@
             background-color: green;
             text-align: center;
             animation: successMsg 5s;
+
+            @include laptop{
+                margin-top: 12px;
+                font-size: 20px;
+                padding: 10px;
+            }
 
             @keyframes successMsg {
                 0%{

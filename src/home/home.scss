@@ -21,12 +21,21 @@
             border-radius: 5px;
             color: white;
             z-index: 1;
+
+            @include laptop{
+                padding: 20px;
+                font-size: medium;
+            }
         }
 
         h1{
             z-index: 1;
             color: black;
             font-size: 65px;
+
+            @include laptop{
+                font-size: 45px;
+            }
 
             font{
                 color: $mainColor;
@@ -36,6 +45,10 @@
         p{
             font-size: 22px;
             line-height: 30px;
+
+            @include laptop{
+                font-size: 20px;
+            }
         }
 
         button{
@@ -47,6 +60,10 @@
             letter-spacing: 4px;
             cursor: pointer;
             transition: all 0.5s ease;
+
+            @include laptop{
+                padding: 15px;
+            }
 
             &:hover{
                 color: $mainColor;
@@ -90,6 +107,12 @@
         height: 700px;
         width: 700px;
         margin: 30px;
+
+        @include laptop{
+            margin: 20px;
+            height: 500px;
+            width: 500px;
+        }
         
         .code{
             width: 0px;
@@ -115,6 +138,10 @@
 
             img{
                 width: 150px;
+
+                @include laptop{
+                    width: 120px;
+                }
             }
         }
 
@@ -126,6 +153,10 @@
 
             img{
                 height: 500px;
+
+                @include laptop{
+                    height: 400px;
+                }
             }
         }
 
@@ -136,6 +167,11 @@
             z-index: 2;
             width: 0px;
             animation: android-move 4.0s infinite;
+
+            @include laptop{
+                bottom: 450px;
+                left: 380px;
+            }
 
             @keyframes android-move{
                 0% {
@@ -153,6 +189,10 @@
 
             img{
                 width: 130px;
+
+                @include laptop{
+                    width: 110px;
+                }
             }
         }
 
@@ -163,6 +203,11 @@
             z-index: 2;
             width: 0px;
             animation: react-move 7.0s infinite;
+
+            @include laptop{
+                bottom: 400px;
+                left: 20px;
+            }
 
             @keyframes react-move{
                 0% {
@@ -180,6 +225,10 @@
 
             img{
                 width: 120px;
+
+                @include laptop{
+                    width: 100px;
+                }
             }
         }
 
@@ -190,8 +239,17 @@
             z-index: 2;
             width: 0px;
 
+            @include laptop{
+                bottom: 300px;
+                left: 460px;
+            }
+
             img{
                 width: 100px;
+
+                @include laptop{
+                    width: 80px;
+                }
             }
         }
 
@@ -200,8 +258,16 @@
             bottom: 1000px;
             width: 0px;
 
+            @include laptop{
+                bottom: 770px;
+            }
+
             img{
                 width: 700px;
+
+                @include laptop{
+                    width: 520px;
+                }
             }
         }
     }
