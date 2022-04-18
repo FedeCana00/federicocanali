@@ -6,12 +6,21 @@
     align-items: center;
     justify-content: center;
 
+    @include mobile{
+        flex-direction: column-reverse;
+    }
+
     .intro{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         margin: 30px;
+
+        @include mobile{
+            margin: 10px;
+            align-items: center;
+        }
 
         .software-engineer{
             background-color: $mainColor;
@@ -31,6 +40,11 @@
                 padding: 15px;
                 font-size: medium;
             }
+
+            @include mobile{
+                padding: 10px;
+                font-size: 18px;
+            }
         }
 
         h1{
@@ -44,6 +58,11 @@
 
             @include iPad{
                 font-size: 40px;
+            }
+
+            @include mobile{
+                font-size: 26px;
+                max-width: 400px;
             }
 
             font{
@@ -61,6 +80,14 @@
 
             @include iPad{
                 font-size: 18px;
+            }
+
+            @include mobile{
+                font-size: 15px;
+                max-width: 400px;
+                line-height: 20px;
+                margin-inline: 20px;
+                text-align: center;
             }
         }
 
@@ -82,6 +109,12 @@
                 padding: 12px;  
             }
 
+            @include mobile{
+                padding: 8px;
+                font-size: 15px;
+                letter-spacing: 3px;
+            }
+
             &:hover{
                 color: $mainColor;
                 background-color: white;
@@ -98,6 +131,10 @@
             width: 500px;
             z-index: 0;
 
+            @include mobile{
+                display: none;
+            }
+
             .ball{
                 margin: 5px;
                 width: 2px;
@@ -109,6 +146,10 @@
 
         .social-container{
             display: flex;
+
+            @include mobile{
+                margin-top: 30px;
+            }
 
             a{
 
@@ -136,6 +177,12 @@
             height: 400px;
             width: 400px;
         }
+
+        @include mobile{
+            margin: 10px;
+            height: 250px;
+            width: 250px;
+        }
         
         .code{
             width: 0px;
@@ -148,6 +195,11 @@
             @include iPad{
                 top: 40px;
                 left: -50px;
+            }
+
+            @include mobile{
+                top: 20px;
+                left: 10px;
             }
 
             @keyframes code-move{
@@ -174,6 +226,10 @@
                 @include iPad{
                     width: 100px;
                 }
+
+                @include mobile {
+                    width: 50px;
+                }
             }
         }
 
@@ -187,6 +243,10 @@
                 left: 0%;
             }
 
+            @include mobile{
+                left: 18%;
+            }
+
             img{
                 height: 500px;
 
@@ -195,7 +255,11 @@
                 }
 
                 @include iPad{
-                    width: 300px;
+                    height: 350px;
+                }
+
+                @include mobile{
+                    height: 200px;
                 }
             }
         }
@@ -215,7 +279,12 @@
 
             @include iPad{
                 bottom: 420px;
-                left: 250px;
+                left: 220px;
+            }
+
+            @include mobile{
+                bottom: 220px;
+                left: 200px;
             }
 
             @keyframes android-move{
@@ -242,6 +311,10 @@
                 @include iPad{
                     width: 90px;
                 }
+
+                @include mobile{
+                    width: 50px;
+                }
             }
         }
 
@@ -259,8 +332,13 @@
             }
 
             @include iPad{
-                bottom: 380px;
+                bottom: 340px;
                 left: -60px;
+            }
+
+            @include mobile{
+                bottom: 160px;
+                left: -10px;
             }
 
             @keyframes react-move{
@@ -287,6 +365,10 @@
                 @include iPad{
                     width: 80px;
                 }
+
+                @include mobile{
+                    width: 50px;
+                }
             }
         }
 
@@ -304,7 +386,12 @@
 
             @include iPad{
                 bottom: 270px;
-                left: 320px;
+                left: 280px;
+            }
+
+            @include mobile{
+                bottom: 180px;
+                left: 200px;
             }
 
             img{
@@ -316,6 +403,10 @@
 
                 @include iPad{
                     width: 60px;
+                }
+
+                @include mobile{
+                    width: 30px;
                 }
             }
         }
@@ -331,7 +422,12 @@
 
             @include iPad{
                 bottom: 660px;
-                left: -75px;
+                left: -95px;
+            }
+
+            @include mobile{
+                bottom: 420px;
+                left: -40px;
             }
 
             img{
@@ -343,6 +439,10 @@
 
                 @include iPad{
                     width: 460px;
+                }
+
+                @include mobile{
+                    width: 300px;
                 }
             }
         }

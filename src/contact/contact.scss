@@ -6,8 +6,13 @@
     align-items: center;
     width: 100%;
 
+    @include mobile{
+        flex-direction: column;
+    }
+
     .left{
         flex: 0.5;
+        width: 100%;
 
         img{
             max-width: 100%;
@@ -37,6 +42,11 @@
                 font-size: 30px;
                 margin: 0px 40px 0px 40px;
             }
+
+            @include mobile{
+                font-size: 25px;
+                margin: 0px 20px 0px 20px;
+            }
         }
 
         p{
@@ -48,6 +58,12 @@
                 font-size: 16px;
                 line-height: 25px;
             }
+
+            @include mobile{
+                font-size: 14px;
+                line-height: 20px;
+                margin-inline: 20px;
+            }
         }
 
         form{
@@ -57,6 +73,11 @@
             align-items: flex-start;
             margin-inline: 40px;
             width: calc(80% - 40px);
+
+            @include mobile{
+                margin-inline: 20px;
+                margin-bottom: 20px;
+            }
 
             label{
                 font-size: 22px;
@@ -71,6 +92,11 @@
                 @include iPad{
                     font-size: 18px;
                     margin-top: 8px;
+                }
+
+                @include mobile{
+                    font-size: 16px;
+                    margin-top: 5px;
                 }
             }
 
