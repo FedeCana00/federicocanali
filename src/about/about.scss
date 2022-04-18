@@ -20,13 +20,22 @@
                 margin: 60px;
             }
 
+            @include iPad{
+                margin: 50px;
+            }
+
             img{
                 height: 100px;
                 margin: 20px;
 
                 @include laptop{
                     height: 70px;
-                    margin: 10px
+                    margin: 10px;
+                }
+
+                @include iPad{
+                    height: 70px;
+                    margin: 10px;
                 }
             }
         }
@@ -47,6 +56,10 @@
             @include laptop{
                 font-size: 22px;
             }
+
+            @include iPad{
+                font-size: 20px;
+            }
         }
 
         h1{
@@ -56,6 +69,11 @@
 
             @include laptop{
                 font-size: 45px;
+                max-width: 650px;
+            }
+
+            @include iPad{
+                font-size: 40px;
                 max-width: 650px;
             }
         }

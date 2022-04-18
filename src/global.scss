@@ -5,6 +5,7 @@ $mainColor: #c1332a;
 // screen size
 $widthMobile: 768px;
 $widthDesktop: 769px;
+$widthiPad: 1024px;
 $widthLaptop: 1440px;
 
 @mixin mobile {
@@ -15,6 +16,12 @@ $widthLaptop: 1440px;
 
 @mixin web {
     @media (min-width: #{$widthDesktop}){
+        @content
+    }
+}
+
+@mixin iPad {
+    @media (max-width: #{$widthiPad}){
         @content
     }
 }

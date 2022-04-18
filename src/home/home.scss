@@ -26,6 +26,11 @@
                 padding: 20px;
                 font-size: medium;
             }
+
+            @include iPad{
+                padding: 15px;
+                font-size: medium;
+            }
         }
 
         h1{
@@ -35,6 +40,10 @@
 
             @include laptop{
                 font-size: 45px;
+            }
+
+            @include iPad{
+                font-size: 40px;
             }
 
             font{
@@ -48,6 +57,10 @@
 
             @include laptop{
                 font-size: 20px;
+            }
+
+            @include iPad{
+                font-size: 18px;
             }
         }
 
@@ -63,6 +76,10 @@
 
             @include laptop{
                 padding: 15px;
+            }
+
+            @include iPad{
+                padding: 12px;  
             }
 
             &:hover{
@@ -113,6 +130,12 @@
             height: 500px;
             width: 500px;
         }
+
+        @include iPad{
+            margin: 15px;
+            height: 400px;
+            width: 400px;
+        }
         
         .code{
             width: 0px;
@@ -121,6 +144,11 @@
             left: 50px;
             z-index: 2;
             animation: code-move 5.0s infinite;
+
+            @include iPad{
+                top: 40px;
+                left: -50px;
+            }
 
             @keyframes code-move{
                 0% {
@@ -142,6 +170,10 @@
                 @include laptop{
                     width: 120px;
                 }
+
+                @include iPad{
+                    width: 100px;
+                }
             }
         }
 
@@ -151,11 +183,19 @@
             z-index: 1;
             width: 0px;
 
+            @include iPad{
+                left: 0%;
+            }
+
             img{
                 height: 500px;
 
                 @include laptop{
                     height: 400px;
+                }
+
+                @include iPad{
+                    width: 300px;
                 }
             }
         }
@@ -171,6 +211,11 @@
             @include laptop{
                 bottom: 450px;
                 left: 380px;
+            }
+
+            @include iPad{
+                bottom: 420px;
+                left: 250px;
             }
 
             @keyframes android-move{
@@ -193,6 +238,10 @@
                 @include laptop{
                     width: 110px;
                 }
+
+                @include iPad{
+                    width: 90px;
+                }
             }
         }
 
@@ -207,6 +256,11 @@
             @include laptop{
                 bottom: 400px;
                 left: 20px;
+            }
+
+            @include iPad{
+                bottom: 380px;
+                left: -60px;
             }
 
             @keyframes react-move{
@@ -229,6 +283,10 @@
                 @include laptop{
                     width: 100px;
                 }
+
+                @include iPad{
+                    width: 80px;
+                }
             }
         }
 
@@ -244,11 +302,20 @@
                 left: 460px;
             }
 
+            @include iPad{
+                bottom: 270px;
+                left: 320px;
+            }
+
             img{
                 width: 100px;
 
                 @include laptop{
                     width: 80px;
+                }
+
+                @include iPad{
+                    width: 60px;
                 }
             }
         }
@@ -262,11 +329,20 @@
                 bottom: 770px;
             }
 
+            @include iPad{
+                bottom: 660px;
+                left: -75px;
+            }
+
             img{
                 width: 700px;
 
                 @include laptop{
                     width: 520px;
+                }
+
+                @include iPad{
+                    width: 460px;
                 }
             }
         }

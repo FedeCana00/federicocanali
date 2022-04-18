@@ -16,6 +16,10 @@
         @include laptop{
             font-size: 45px;
         }
+
+        @include iPad{
+            font-size: 35px;
+        }
     }
 
     .projects{
@@ -41,6 +45,10 @@
                     margin: 30px;
                 }
 
+                @include iPad{
+                    font-size: 29px;
+                }
+
                 .software-type{
                     color: $mainColor;
                     font-size: 25px;
@@ -49,6 +57,10 @@
 
                     @include laptop{
                         font-size: 22px;
+                    }
+
+                    @include iPad{
+                        font-size: 20px;
                     }
                 }
     
@@ -92,6 +104,10 @@
                                 padding: 15px;
                             }
 
+                            @include iPad{
+                                padding: 12px;
+                            }
+
                             &:hover{
                                 color: $mainColor;
                                 background-color: white;
@@ -130,6 +146,11 @@
                     @include laptop{
                         width: 700px;
                         height: 393.75px;
+                    }
+
+                    @include iPad{
+                        width: 500px;
+                        height: 281.25px;
                     }
     
                     img{

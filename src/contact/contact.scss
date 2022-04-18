@@ -32,12 +32,22 @@
             @include laptop{
                 font-size: 45px;
             }
+
+            @include iPad{
+                font-size: 30px;
+                margin: 0px 40px 0px 40px;
+            }
         }
 
         p{
             font-size: 18px;
             line-height: 30px;
             margin-inline: 40px;
+
+            @include iPad{
+                font-size: 16px;
+                line-height: 25px;
+            }
         }
 
         form{
@@ -57,6 +67,11 @@
                     font-size: 20px;
                     margin-top: 12px;
                 }
+
+                @include iPad{
+                    font-size: 18px;
+                    margin-top: 8px;
+                }
             }
 
             input{
@@ -67,6 +82,11 @@
                 padding: 10px;
                 font-size: 18px;
                 border-color: gray;
+
+                @include iPad{
+                    padding: 5px;
+                    font-size: 16px;
+                }
 
                 &:focus{
                     border-color: $mainColor
@@ -91,6 +111,11 @@
                     margin-top: 12px;
                 }
 
+                @include iPad{
+                    padding: 5px;
+                    margin-top: 8px;
+                }
+
                 &:hover{
                     color: $mainColor;
                     background-color: white;
@@ -110,6 +135,12 @@
 
                 @include laptop{
                     height: 60px;
+                }
+
+                @include iPad{
+                    width: calc(100% - 12px);
+                    padding: 5px;
+                    font-size: 16px;
                 }
 
                 &:focus{
@@ -134,6 +165,12 @@
                 margin-top: 12px;
                 font-size: 20px;
                 padding: 10px;
+            }
+
+            @include iPad{
+                margin-top: 8px;
+                font-size: 18px;
+                padding: 5px;
             }
 
             @keyframes successMsg {
