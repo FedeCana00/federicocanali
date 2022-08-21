@@ -13,6 +13,14 @@
         }
     }
 
+    .css-1osd13g-MuiSvgIcon-root {
+        font-size: 48px;
+
+        @include breakpoint(lg){
+            font-size: 64px;
+        }
+    }
+
     a{
 
         &:hover{
