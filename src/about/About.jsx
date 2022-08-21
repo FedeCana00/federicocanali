@@ -29,12 +29,12 @@ export default function About(){
                 </div>
             </div>
             <div className="right">
-                <div className="introduce">
+                <h5>
                     Introduce
-                </div>
-                <h1>
+                </h5>
+                <h2>
                     Simplicity is prerequisite for reliability
-                </h1>
+                </h2>
                 <p>
                     I'm an avid fan of the tech world looking to 
                     play a part in it. My first approach to this 

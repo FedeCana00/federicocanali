@@ -2,25 +2,129 @@
 // color used globally
 $mainColor: #c1332a;
 
-// screen size
-$widthMobile: 768px;
-$widthiPad: 1024px;
-$widthLaptop: 1440px;
+// text dimensions
+$h1Large: 65px;
 
-@mixin mobile {
-    @media (max-width: #{$widthMobile}){
-        @content
+// widget
+@import "./device.scss";
+
+h1 {
+    color: black;
+    font-size: 32px;
+    margin: 10px 0 10px 0;
+
+    @include breakpoint(md){
+        font-size: 56px;
+    }
+
+    @include breakpoint(lg){
+        font-size: 65px;
+        margin: 20px 0 20px 0;
+    }
+
+    font{
+        color: $mainColor;
     }
 }
 
-@mixin iPad {
-    @media (max-width: #{$widthiPad}){
-        @content
+h2 {
+    color: black;
+    font-size: 26px;
+    margin: 10px 0 10px 0;
+
+    @include breakpoint(md){
+        font-size: 32px;
+    }
+
+    @include breakpoint(lg){
+        font-size: 38px;
+        margin: 20px 0 20px 0;
     }
 }
 
-@mixin laptop {
-    @media (max-width: #{$widthLaptop}){
-        @content
+h3 {
+    color: black;
+    font-size: 24px;
+    margin: 10px 0 10px 0;
+
+    @include breakpoint(md){
+        font-size: 28px;
     }
+
+    @include breakpoint(lg){
+        font-size: 32px;
+        margin: 20px 0 20px 0;
+    }
+}
+
+h5{
+    color: $mainColor;
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: 900;
+    margin: 10px 0 10px 0;
+
+    @include breakpoint(md){
+        font-size: 22px;
+    }
+
+    @include breakpoint(lg){
+        font-size: 25px;
+    }
+}
+
+p {
+    font-size: 16px;
+    margin: 10px 0 10px 0;
+
+    @include breakpoint(md){
+        font-size: 20px;
+        margin: 20px 0 20px 0;
+    }
+
+    @include breakpoint(lg){
+        font-size: 22px;
+        margin: 20px 0 20px 0;
+    }
+}
+
+button{
+    padding: 10px;
+    color: white;
+    margin: 10px 0 10px 0;
+    background-color: $mainColor;
+    border: 2px solid $mainColor;
+    font-size: 16px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    @include breakpoint(md){
+        font-size: 18px;
+        margin: 20px 0 20px 0;
+    }
+
+    @include breakpoint(lg){
+        font-size: 22px;
+        padding: 20px;
+        margin: 20px 0 20px 0;
+    }
+
+    &:hover{
+        color: $mainColor;
+        background-color: white;
+    }
+
+    &.outline{
+        color: $mainColor;
+        background-color: white;
+        margin-right: 10px;
+
+        &:hover{
+            color: white;
+            background-color: $mainColor;
+            border: 2px solid $mainColor;
+        }
+    }
+
 }

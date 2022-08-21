@@ -21,26 +21,29 @@ export default function Works() {
 
     return (
         <div className="works">
-            <h1>
+            <h5>
+                Portfolio
+            </h5>
+            <h2>
                 Some of my projects
-            </h1>
+            </h2>
             <div className="projects">
                 {projects.map((value, key) => (
                     <div className="project" key={key}>
                         <div className="left">
-                            <div className="software-type">
+                            <h5>
                                 {value.type}
-                            </div>
-                            <div className="title">
+                            </h5>
+                            <h3>
                                 {value.name}
-                            </div>
+                            </h3>
                             <p>
                                 {value.description}
                             </p>
-                            <div className="buttons-section">
+                            <>
                                 {showSourceCodeButton(value.source_code)}
                                 {showDemoButton(value.demo)}   
-                            </div>
+                            </>
                         </div>
                         <div className="right">
                             <div className="image-container">

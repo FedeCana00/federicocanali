@@ -4,10 +4,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    flex-direction: column;
+    width: calc(100% - 60px);
+    margin: 30px;
 
-    @include mobile{
-        flex-direction: column;
+    @include breakpoint(lg){
+        flex-direction: row;
     }
 
     .left{
@@ -15,7 +17,7 @@
         width: 100%;
 
         img{
-            max-width: 100%;
+            width: 100%;
         }
     }
 
@@ -28,44 +30,6 @@
         max-width: 100%;
         position: relative;
 
-        h1{
-            font-size: 55px;
-            color: $mainColor;
-            letter-spacing: 3px;
-            margin-inline: 40px;
-
-            @include laptop{
-                font-size: 45px;
-            }
-
-            @include iPad{
-                font-size: 30px;
-                margin: 0px 40px 0px 40px;
-            }
-
-            @include mobile{
-                font-size: 25px;
-                margin: 0px 20px 0px 20px;
-            }
-        }
-
-        p{
-            font-size: 18px;
-            line-height: 30px;
-            margin-inline: 40px;
-
-            @include iPad{
-                font-size: 16px;
-                line-height: 25px;
-            }
-
-            @include mobile{
-                font-size: 14px;
-                line-height: 20px;
-                margin-inline: 20px;
-            }
-        }
-
         form{
             display: flex;
             flex-direction: column;
@@ -74,44 +38,36 @@
             margin-inline: 40px;
             width: calc(80% - 40px);
 
-            @include mobile{
-                margin-inline: 20px;
-                margin-bottom: 20px;
-            }
-
             label{
-                font-size: 22px;
+                font-size: 16px;
                 font-weight: bold;
-                margin-top: 15px;
+                margin-top: 10px;
 
-                @include laptop{
+                @include breakpoint(md){
                     font-size: 20px;
-                    margin-top: 12px;
+                    margin-top: 15px;
                 }
-
-                @include iPad{
-                    font-size: 18px;
-                    margin-top: 8px;
-                }
-
-                @include mobile{
-                    font-size: 16px;
-                    margin-top: 5px;
+            
+                @include breakpoint(lg){
+                    font-size: 22px;
+                    margin-top: 15px;
                 }
             }
 
             input{
                 // 100% minus 10 padding x 2 + 1 border width x 2
                 width: calc(100% - 12px);
-                font-size: 20px;
+                font-size: 16px;
                 border-width: 1px;
                 padding: 10px;
-                font-size: 18px;
                 border-color: gray;
 
-                @include iPad{
-                    padding: 5px;
-                    font-size: 16px;
+                @include breakpoint(md){
+                    font-size: 20px;
+                }
+            
+                @include breakpoint(lg){
+                    font-size: 22px;
                 }
 
                 &:focus{
@@ -122,24 +78,25 @@
             input[type=submit]{
                 width: auto;
                 align-self: flex-end;
-                padding: 20px;
+                padding: 10px;
                 color: white;
                 background-color: $mainColor;
                 border: 2px solid $mainColor;
-                font-size: 18px;
+                font-size: 16px;
                 letter-spacing: 4px;
-                margin-top: 15px;
+                margin-top: 10px 0 10px 0;
                 cursor: pointer;
                 transition: all 0.5s ease;
 
-                @include laptop{
-                    padding: 10px;
-                    margin-top: 12px;
+                @include breakpoint(md){
+                    font-size: 18px;
+                    margin: 20px 0 20px 0;
                 }
-
-                @include iPad{
-                    padding: 5px;
-                    margin-top: 8px;
+            
+                @include breakpoint(lg){
+                    font-size: 22px;
+                    padding: 20px;
+                    margin: 20px 0 20px 0;
                 }
 
                 &:hover{
@@ -159,16 +116,6 @@
                 border-color: gray;
                 resize: none;
 
-                @include laptop{
-                    height: 60px;
-                }
-
-                @include iPad{
-                    width: calc(100% - 12px);
-                    padding: 5px;
-                    font-size: 16px;
-                }
-
                 &:focus{
                     border-color: $mainColor;
                 }
@@ -186,18 +133,6 @@
             background-color: green;
             text-align: center;
             animation: successMsg 5s;
-
-            @include laptop{
-                margin-top: 12px;
-                font-size: 20px;
-                padding: 10px;
-            }
-
-            @include iPad{
-                margin-top: 8px;
-                font-size: 18px;
-                padding: 5px;
-            }
 
             @keyframes successMsg {
                 0%{

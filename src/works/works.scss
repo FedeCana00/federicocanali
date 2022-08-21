@@ -5,27 +5,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-top: 40px;
-
-    h1{
-        font-size: 55px;
-        color: black;
-        max-width: 700px;
-        margin-inline: 50px;
-
-        @include laptop{
-            font-size: 45px;
-        }
-
-        @include iPad{
-            font-size: 35px;
-        }
-
-        @include mobile{
-            font-size: 25px;
-            margin-inline: 20px;
-        }
-    }
+    margin: 30px;
 
     .projects{
         display: flex;
@@ -40,160 +20,43 @@
             align-items: center;
             width: 100%;
 
-            @include mobile{
-                flex-direction: column;
-            }
-
             .left{
-                flex: 0.7;
+                flex: 0.5;
                 margin: 40px;
                 justify-content: flex-start;
                 align-items: center;
-
-                @include laptop{
-                    margin: 30px;
-                }
-
-                @include iPad{
-                    margin: 30px;
-                }
-
-                @include mobile{
-                    margin: 20px;
-                }
-
-                .software-type{
-                    color: $mainColor;
-                    font-size: 25px;
-                    letter-spacing: 4px;
-                    font-weight: 900;
-
-                    @include laptop{
-                        font-size: 22px;
-                    }
-
-                    @include iPad{
-                        font-size: 20px;
-                    }
-
-                    @include mobile{
-                        font-size: 18px;
-                    }
-                }
-    
-                .title{
-                    font-size: 45px;
-                    font-weight: 700;
-                    color: black;
-                    max-width: 700px;
-
-                    @include laptop{
-                        font-size: 35px;
-                    }
-
-                    @include mobile{
-                        font-size: 25px;
-                    }
-                }
-    
-                p{
-                    max-width: 700px;
-                    font-size: 20px;
-                    line-height: 30px;
-
-                    @include laptop{
-                        font-size: 18px;
-                    }
-
-                    @include mobile{
-                        font-size: 15px;
-                        line-height: 20px;
-                    }
-                }
-
-                .buttons-section{
-                    display: flex;
-                    
-                    a{
-
-                        button{
-                            padding: 20px;
-                            color: white;
-                            background-color: $mainColor;
-                            border: 2px solid $mainColor;
-                            font-size: 18px;
-                            letter-spacing: 4px;
-                            cursor: pointer;
-                            transition: all 0.5s ease;
-
-                            @include laptop{
-                                padding: 15px;
-                            }
-
-                            @include iPad{
-                                padding: 12px;
-                            }
-
-                            @include mobile{
-                                padding: 5px;
-                            }
-
-                            &:hover{
-                                color: $mainColor;
-                                background-color: white;
-                            }
-
-                            &.outline{
-                                color: $mainColor;
-                                background-color: white;
-                                margin-right: 20px;
-
-                                &:hover{
-                                    color: white;
-                                    background-color: $mainColor;
-                                    border: 2px solid $mainColor;
-                                }
-                            }
-                        }
-                    }
-                }
             }
 
             .right{
-                flex: 0.3;
+                flex: 0.5;
                 position: relative;
 
                 .image-container{
-                    margin: 40px;
-                    width: 1000px;
-                    height: 562.5px;
+                    margin: 10px;
+                    width: calc(100% - 20px);
+                    height: calc(100% - 20px);
                     overflow: hidden;
                     border-radius: 10px;
                     box-shadow: 0  9px 46px  8px rgba(0, 0, 0, 0.14),
                         0 11px 15px -7px rgba(0, 0, 0, 0.12),
                         0 24px 38px  3px rgba(0, 0, 0, 0.20);
 
-                    @include laptop{
-                        width: 700px;
-                        height: 393.75px;
+                    @include breakpoint(md){
+                        margin: 20px;
+                        width: calc(100% - 40px);
+                        height: calc(100% - 40px);
                     }
 
-                    @include iPad{
-                        width: 500px;
-                        height: 281.25px;
-                    }
-
-                    @include mobile{
-                        width: 300px;
-                        height: 168.75px;
-                        margin: 0px;
-                        align-items: center;
+                    @include breakpoint(lg){
+                        margin: 40px;
+                        width: calc(100% - 80px);
+                        height: calc(100% - 80px);
                     }
     
                     img{
                         transition: transform 2.5s ease;
-                        max-width:100%;
-                        max-height:100%;
+                        width: 100%;
+                        height: 100%;
                         margin: 0px;
     
                         &:hover{

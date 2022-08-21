@@ -49,9 +49,9 @@ export default function Contact() {
                 <img src="/assets/contact-us.svg" alt="Contact me" />
             </div>
             <div className="right">
-                <h1>
+                <h2>
                     Contact me
-                </h1>
+                </h2>
                 <p>
                     Do you want to <b>HIRE ME</b> for some work? Do you want to have more 
                     information about my person? <br />

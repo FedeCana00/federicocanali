@@ -1,6 +1,7 @@
+
 import "./home.scss";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import "../global.scss";
+import SocialMedia from "../social-media/SocialMedia";
 import MouseScroll from "./mouse-scroll/MouseScroll";
 
 export default function Home() {
@@ -19,39 +20,14 @@ export default function Home() {
                 <p>
                     I conceive and develop ideas to improve efficiency in people's lives.
                 </p>
+
                 <a href="#contact-me"><button>Hire me</button></a>
-                <div className="balls-container">
-                    { [...Array(574)].map((_, index) => <div key={index} className="ball"/>) }
-                </div>
-                <div className="social-container">
-                    <a href="https://github.com/FedeCana00">
-                        <GitHubIcon sx={{ fontSize: 80, color: "#c1332a"}}/>
-                    </a>
-                    <a href="https://www.linkedin.com/in/federico-canali-26b004211">
-                        <LinkedInIcon sx={{ fontSize: 80, color: "#c1332a"}}/>
-                    </a>
-                </div>
+                
+                <SocialMedia isFooter={false}/>
                 <MouseScroll />
             </div>
             <div className="image-container">
-                <div className="code">
-                    <img src="/assets/code.png" alt="" />
-                </div>
-                <div className="myself">
-                    <img src="/assets/federico_canali.png" alt="" />
-                </div>
-                <div className="android">
-                    <img src="/assets/android.png" alt="" />
-                </div>
-                <div className="react">
-                    <img src="/assets/react.png" alt="" />
-                </div>
-                <div className="java">
-                    <img src="/assets/java.png" alt="" />
-                </div>
-                <div className="blob">
-                    <img src="/assets/blob.svg" alt="" />
-                </div>
+                <img src="/assets/my-preview.svg" alt="" />
             </div>
         </div>
     );

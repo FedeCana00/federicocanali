@@ -4,151 +4,49 @@
     height: 100%;
     display: flex;
     align-items: center;
+    flex-direction: column-reverse;
     justify-content: center;
 
-    @include mobile{
-        flex-direction: column-reverse;
+    @include breakpoint(lg){
+        flex-direction: row;
+        align-items: flex-end;
     }
 
     .intro{
         display: flex;
+        height: calc(100% - 30px);
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: flex-end;
         align-items: flex-start;
         margin: 30px;
 
-        @include mobile{
-            margin: 10px;
-            align-items: center;
-        }
-
         .software-engineer{
             background-color: $mainColor;
-            padding: 30px;
-            font-size: large;
+            padding: 10px;
+            margin: 5px 0 5px 0;
+            font-size: 16px;
             letter-spacing: 3px;
             border-radius: 5px;
             color: white;
             z-index: 1;
 
-            @include laptop{
-                padding: 20px;
-                font-size: medium;
-            }
-
-            @include iPad{
-                padding: 15px;
-                font-size: medium;
-            }
-
-            @include mobile{
-                padding: 10px;
-                font-size: 18px;
-            }
-        }
-
-        h1{
-            z-index: 1;
-            color: black;
-            font-size: 65px;
-
-            @include laptop{
-                font-size: 45px;
-            }
-
-            @include iPad{
-                font-size: 40px;
-            }
-
-            @include mobile{
-                font-size: 26px;
-                max-width: 400px;
-            }
-
-            font{
-                color: $mainColor;
-            }
-        }
-
-        p{
-            font-size: 22px;
-            line-height: 30px;
-
-            @include laptop{
+            @include breakpoint(lg){
                 font-size: 20px;
-            }
-
-            @include iPad{
-                font-size: 18px;
-            }
-
-            @include mobile{
-                font-size: 15px;
-                max-width: 400px;
-                line-height: 20px;
-                margin-inline: 20px;
-                text-align: center;
-            }
-        }
-
-        button{
-            padding: 20px;
-            color: white;
-            background-color: $mainColor;
-            border: 2px solid $mainColor;
-            font-size: 18px;
-            letter-spacing: 4px;
-            cursor: pointer;
-            transition: all 0.5s ease;
-
-            @include laptop{
-                padding: 15px;
-            }
-
-            @include iPad{
-                padding: 12px;  
-            }
-
-            @include mobile{
-                padding: 8px;
-                font-size: 15px;
-                letter-spacing: 3px;
-            }
-
-            &:hover{
-                color: $mainColor;
-                background-color: white;
-            }
-
-        }
-
-        .balls-container{
-            position: relative;
-            bottom: 350px;
-            right: 100px;
-            display: flex;
-            flex-wrap: wrap;
-            width: 500px;
-            z-index: 0;
-
-            @include mobile{
-                display: none;
-            }
-
-            .ball{
-                margin: 5px;
-                width: 2px;
-                height: 2px;
-                border-radius: 50%;
-                background-color: $mainColor;
+                padding: 30px
             }
         }
 
         .social-container{
             display: flex;
+            margin: 20px 0 20px 0;
 
-            @include mobile{
-                margin-top: 30px;
+            // change Material UI Icon size
+            .css-94gs0b-MuiSvgIcon-root {
+                font-size: 48px;
+
+                @include breakpoint(lg){
+                    font-size: 64px;
+                }
             }
 
             a{
@@ -162,290 +60,21 @@
     }
 
     .image-container{
-        height: 700px;
-        width: 700px;
-        margin: 30px;
+        width: calc(100% - 20px);
+        margin: 10px;
+        height: calc(35% - 10px);
 
-        @include laptop{
-            margin: 20px;
-            height: 500px;
-            width: 500px;
+        @include breakpoint(lg){
+            width: calc(50% - 60px);
+            margin: 30px 30px 0 30px;
+            height: calc(100% - 30px);
         }
 
-        @include iPad{
-            margin: 15px;
-            height: 400px;
-            width: 400px;
-        }
-
-        @include mobile{
-            margin: 10px;
-            height: 250px;
-            width: 250px;
+        img{
+            width: 100%;
+            height: 100%;
         }
         
-        .code{
-            width: 0px;
-            position: relative;
-            top: 50px;
-            left: 50px;
-            z-index: 2;
-            animation: code-move 5.0s infinite;
-
-            @include iPad{
-                top: 40px;
-                left: -50px;
-            }
-
-            @include mobile{
-                top: 20px;
-                left: 10px;
-            }
-
-            @keyframes code-move{
-                0% {
-                    transform: translateY(-50px);
-                }
-    
-                50% {
-                    transform: translateY(50px);
-                }
-    
-                100% {
-                    transform: translateY(-50px);
-                }
-            }
-
-            img{
-                width: 150px;
-
-                @include laptop{
-                    width: 120px;
-                }
-
-                @include iPad{
-                    width: 100px;
-                }
-
-                @include mobile {
-                    width: 50px;
-                }
-            }
-        }
-
-        .myself{
-            position: relative;
-            left: 25%;
-            z-index: 1;
-            width: 0px;
-
-            @include iPad{
-                left: 0%;
-            }
-
-            @include mobile{
-                left: 18%;
-            }
-
-            img{
-                height: 500px;
-
-                @include laptop{
-                    height: 400px;
-                }
-
-                @include iPad{
-                    height: 350px;
-                }
-
-                @include mobile{
-                    height: 200px;
-                }
-            }
-        }
-
-        .android{
-            position: relative;
-            bottom: 550px;
-            left: 480px;
-            z-index: 2;
-            width: 0px;
-            animation: android-move 4.0s infinite;
-
-            @include laptop{
-                bottom: 450px;
-                left: 380px;
-            }
-
-            @include iPad{
-                bottom: 420px;
-                left: 220px;
-            }
-
-            @include mobile{
-                bottom: 220px;
-                left: 200px;
-            }
-
-            @keyframes android-move{
-                0% {
-                    transform: translateY(-20px);
-                }
-    
-                50% {
-                    transform: translateY(20px);
-                }
-    
-                100% {
-                    transform: translateY(-20px);
-                }
-            }
-
-            img{
-                width: 130px;
-
-                @include laptop{
-                    width: 110px;
-                }
-
-                @include iPad{
-                    width: 90px;
-                }
-
-                @include mobile{
-                    width: 50px;
-                }
-            }
-        }
-
-        .react{
-            position: relative;
-            bottom: 500px;
-            left: 40px;
-            z-index: 2;
-            width: 0px;
-            animation: react-move 7.0s infinite;
-
-            @include laptop{
-                bottom: 400px;
-                left: 20px;
-            }
-
-            @include iPad{
-                bottom: 340px;
-                left: -60px;
-            }
-
-            @include mobile{
-                bottom: 160px;
-                left: -10px;
-            }
-
-            @keyframes react-move{
-                0% {
-                    transform: translateY(-10px);
-                }
-    
-                50% {
-                    transform: translateY(10px);
-                }
-    
-                100% {
-                    transform: translateY(-10px);
-                }
-            }
-
-            img{
-                width: 120px;
-
-                @include laptop{
-                    width: 100px;
-                }
-
-                @include iPad{
-                    width: 80px;
-                }
-
-                @include mobile{
-                    width: 50px;
-                }
-            }
-        }
-
-        .java{
-            position: relative;
-            bottom: 400px;
-            left: 560px;
-            z-index: 2;
-            width: 0px;
-
-            @include laptop{
-                bottom: 300px;
-                left: 460px;
-            }
-
-            @include iPad{
-                bottom: 270px;
-                left: 280px;
-            }
-
-            @include mobile{
-                bottom: 180px;
-                left: 200px;
-            }
-
-            img{
-                width: 100px;
-
-                @include laptop{
-                    width: 80px;
-                }
-
-                @include iPad{
-                    width: 60px;
-                }
-
-                @include mobile{
-                    width: 30px;
-                }
-            }
-        }
-
-        .blob{
-            position: relative;
-            bottom: 1000px;
-            width: 0px;
-
-            @include laptop{
-                bottom: 770px;
-            }
-
-            @include iPad{
-                bottom: 660px;
-                left: -95px;
-            }
-
-            @include mobile{
-                bottom: 420px;
-                left: -40px;
-            }
-
-            img{
-                width: 700px;
-
-                @include laptop{
-                    width: 520px;
-                }
-
-                @include iPad{
-                    width: 460px;
-                }
-
-                @include mobile{
-                    width: 300px;
-                }
-            }
-        }
     }
     
 }

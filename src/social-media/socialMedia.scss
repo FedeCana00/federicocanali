@@ -1,0 +1,23 @@
+@import "../device.scss";
+
+.social-container{
+    display: flex;
+    margin: 20px 0 20px 0;
+
+    // change Material UI Icon size
+    .css-94gs0b-MuiSvgIcon-root {
+        font-size: 48px;
+
+        @include breakpoint(lg){
+            font-size: 64px;
+        }
+    }
+
+    a{
+
+        &:hover{
+            opacity: 0.7;
+            cursor: pointer;
+        }
+    }
+}
