@@ -22,7 +22,7 @@ export default function About(){
                     <img src="/assets/languages/node-js.png" alt="NodeJS" />
                     <img src="/assets/languages/pycharm.svg" alt="Pycharm" />
                     <img src="/assets/languages/python.png" alt="Python" />
-                    <img src="/assets/react.png" alt="ReactJS" />
+                    <img src="/assets/languages/react.svg" alt="ReactJS" />
                     <img src="/assets/languages/sass.png" alt="SASS" />
                     <img src="/assets/languages/visual-basic.png" alt="Visual Studio" />
                     <img src="/assets/languages/visual-studio-code.png" alt="Visual Studio Code" />

@@ -50,8 +50,8 @@
         },
         {
             type: "Android application",
-            name: "Extraction of numbers and people",
-            description: "Extraction of numbers and people is an easy and intuitive App to extract a random number (or random numbers) and people from a list. The App can be used to extract the students questioned during the lesson of mathematics, physics, geometry, Italian, English, ... Do you want to draw who will offer dinner at the restaurant? Or would you like to create a soccer team? Then use Extraction of numbers and people!",
+            name: "Query extraction",
+            description: "Query Extraction is an easy and intuitive App to extract a random number (or random numbers) and people from a list. This is the app designed to make it easier for teachers to choose which students to question. Thanks to this app you will be able to create lists with the names of the students.",
             img: "/assets/projects/numbers-people-extraction.png",
             source_code: "",
             demo: "https://play.google.com/store/apps/details?id=com.mobdevfc.extractionsofnumbers"
