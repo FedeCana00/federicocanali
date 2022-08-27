@@ -46,9 +46,7 @@ export default function Works() {
                             </>
                         </div>
                         <div className="right">
-                            <div className="image-container">
-                                <img src={value.img} alt={value.name} />
-                            </div>
+                            <img src={value.img} alt={value.name} />
                         </div>
                     </div>
                 ))}
