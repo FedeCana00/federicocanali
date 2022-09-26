@@ -12,10 +12,10 @@ export default function SocialMedia({isFooter}) {
     return(
         <div className="social-container">
             <a href={GITHUB_URL} target="_blank">
-                <GitHubIcon sx={{ fontSize: 80, color: iconColor}}/>
+                <GitHubIcon sx={{ color: iconColor}}/>
             </a>
             <a href={LINKEDIN_UL} target="_blank">
-                <LinkedInIcon sx={{ fontSize: 80, color: iconColor}}/>
+                <LinkedInIcon sx={{ color: iconColor}}/>
             </a>
         </div>
     );
