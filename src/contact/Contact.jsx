@@ -46,7 +46,7 @@ export default function Contact() {
     return(
         <div className="contact-me" id="contact-me">
             <div className="left">
-                <img src="/assets/contact-us.svg" alt="Contact me" />
+                <img src="assets/contact-us.svg" alt="Contact me" />
             </div>
             <div className="right">
                 <h2>

@@ -6,26 +6,26 @@ export default function About(){
         <div className="about">
             <div className="left">
                 <div className="tech-container">
-                    <img src="/assets/languages/android-studio.svg" alt="android studio" />
-                    <img src="/assets/languages/c-plus-plus.png" alt="C++" />
-                    <img src="/assets/languages/c-sharp.png" alt="C#" />
-                    <img src="/assets/languages/codesys.png" alt="Codesys" />
-                    <img src="/assets/languages/css-3.png" alt="CSS" />
-                    <img src="/assets/languages/figma.png" alt="Figma" />
-                    <img src="/assets/languages/firebase.png" alt="Firebase" />
-                    <img src="/assets/languages/html-5.png" alt="HTML" />
-                    <img src="/assets/languages/ibm.png" alt="IBM" />
-                    <img src="/assets/languages/illustrator.png" alt="Illustrator" />
-                    <img src="/assets/languages/java.png" alt="Java" />
-                    <img src="/assets/languages/js.png" alt="Javascript" />
-                    <img src="/assets/languages/mysql.png" alt="MySQL" />
-                    <img src="/assets/languages/node-js.png" alt="NodeJS" />
-                    <img src="/assets/languages/pycharm.svg" alt="Pycharm" />
-                    <img src="/assets/languages/python.png" alt="Python" />
-                    <img src="/assets/languages/react.svg" alt="ReactJS" />
-                    <img src="/assets/languages/sass.png" alt="SASS" />
-                    <img src="/assets/languages/visual-basic.png" alt="Visual Studio" />
-                    <img src="/assets/languages/visual-studio-code.png" alt="Visual Studio Code" />
+                    <img src="assets/languages/android-studio.svg" alt="android studio" />
+                    <img src="assets/languages/c-plus-plus.png" alt="C++" />
+                    <img src="assets/languages/c-sharp.png" alt="C#" />
+                    <img src="assets/languages/codesys.png" alt="Codesys" />
+                    <img src="assets/languages/css-3.png" alt="CSS" />
+                    <img src="assets/languages/figma.png" alt="Figma" />
+                    <img src="assets/languages/firebase.png" alt="Firebase" />
+                    <img src="assets/languages/html-5.png" alt="HTML" />
+                    <img src="assets/languages/ibm.png" alt="IBM" />
+                    <img src="assets/languages/illustrator.png" alt="Illustrator" />
+                    <img src="assets/languages/java.png" alt="Java" />
+                    <img src="assets/languages/js.png" alt="Javascript" />
+                    <img src="assets/languages/mysql.png" alt="MySQL" />
+                    <img src="assets/languages/node-js.png" alt="NodeJS" />
+                    <img src="assets/languages/pycharm.svg" alt="Pycharm" />
+                    <img src="assets/languages/python.png" alt="Python" />
+                    <img src="assets/languages/react.svg" alt="ReactJS" />
+                    <img src="assets/languages/sass.png" alt="SASS" />
+                    <img src="assets/languages/visual-basic.png" alt="Visual Studio" />
+                    <img src="assets/languages/visual-studio-code.png" alt="Visual Studio Code" />
                 </div>
             </div>
             <div className="right">

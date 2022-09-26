@@ -27,7 +27,7 @@ export default function Home() {
                 <MouseScroll />
             </div>
             <div className="image-container">
-                <img src="/assets/my-preview.svg" alt="" />
+                <img src="assets/my-preview.svg" alt="" />
             </div>
         </div>
     );
