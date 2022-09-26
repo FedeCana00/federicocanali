@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/federicocanali/static/css/main.b62967d7.css",
-    "main.js": "/federicocanali/static/js/main.1c4275b5.js",
+    "main.js": "/federicocanali/static/js/main.e9910386.js",
     "index.html": "/federicocanali/index.html",
     "main.b62967d7.css.map": "/federicocanali/static/css/main.b62967d7.css.map",
-    "main.1c4275b5.js.map": "/federicocanali/static/js/main.1c4275b5.js.map"
+    "main.e9910386.js.map": "/federicocanali/static/js/main.e9910386.js.map"
   },
   "entrypoints": [
     "static/css/main.b62967d7.css",
-    "static/js/main.1c4275b5.js"
+    "static/js/main.e9910386.js"
   ]
 }
